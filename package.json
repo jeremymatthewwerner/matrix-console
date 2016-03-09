@@ -1,0 +1,26 @@
+{
+  "name": "webapp1",
+  "version": "0.0.1",
+  "description": "My first webapp practice",
+  "main": "Server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "latest",
+    "express-handlebars": "^3.0.0",
+    "nedb": "^1.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeremymatthewwerner/webapp1.git"
+  },
+  "author": "Jeremy Werner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeremymatthewwerner/webapp1/issues"
+  },
+  "homepage": "https://github.com/jeremymatthewwerner/webapp1#readme"
+}
