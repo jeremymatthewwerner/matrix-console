@@ -9,35 +9,35 @@ var db = require('./data/database'),
 
 module.exports = function(app){
 	app.get('/', function(req, res){
-		res.render('sequences', { msg : 'Hello, world!' });
+		res.render('sequences', { sequences : true });
 	});
 
 	app.get("/sequences",function(req,res){
-  		res.render('sequences', { tab : 'sequences' }); 
+  		res.render('sequences', { sequences : true }); 
   	});
 
   	app.get("/pages",function(req,res){
-  		res.render('pages', { tab : 'pages' }); 
+  		res.render('pages', { pages : true }); 
   	});
 
   	app.get("/sounds",function(req,res){
-  		res.render('sounds', { tab : 'sounds' }); 
+  		res.render('sounds', { sounds : true }); 
   	});
 
   	app.get("/images",function(req,res){
-  		res.render('images', { tab : 'images' }); 
+  		res.render('images', { images : true }); 
   	});
 
   	app.get("/phrases",function(req,res){
-  		res.render('phrases', { tab : 'phrases' }); 
+  		res.render('phrases', { phrases : true }); 
   	});
 
   	app.get("/websources",function(req,res){
-  		res.render('websources', { tab : 'websources' }); 
+  		res.render('websources', { websources : true }); 
   	});
 
   	app.get("/shellcmds",function(req,res){
-  		res.render('shellcmds', { tab : 'shellcmds' }); 
+  		res.render('shellcmds', { shellcmds : true }); 
   	});
 
 };

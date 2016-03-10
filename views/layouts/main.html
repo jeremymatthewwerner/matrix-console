@@ -20,17 +20,35 @@
 		<nav class="navbar navbar-inverse" role="navigation" style="padding-left:130px;">
 			<ul class="nav navbar-nav">
 			<!-- set active depending on the page we are on righ tnow-->
-  				<li class="active"><a href="/">Sequences<span class="sr-only">(current)</span></a></li>
-  				<li><a href="/pages">Pages</a></li>
-  				<li><a href="/sounds">Sounds</a></li>
-  				<li><a href="/images">Images</a></li>
-  				<li><a href="/phrases">Phrases</a></li>
-  				<li><a href="/websources">Web Sources</a></li>
-  				<li><a href="/shellcmds">Shell Commands</a></li>
+
+  				<li {{#if sequences}} class="active"{{/if}}> <a href="/">Sequences{{#if sequences}} <span class="sr-only">(current)</span>{{/if}}</a></li>
+  				<li {{#if pages}} 	  class="active"{{/if}}> <a href="/pages">Pages{{#if pages}}    <span class="sr-only">(current)</span>{{/if}}</a></li>
+  				<li {{#if sounds}}    class="active"{{/if}}> <a href="/sounds">Sounds{{#if sounds}} <span class="sr-only">(current)</span>{{/if}}</a></li>
+  				<li {{#if images}} 	  class="active"{{/if}}><a href="/images">Images{{#if images}} <span class="sr-only">(current)</span>{{/if}}</a></li>
+  				<li {{#if phrases}}   class="active"{{/if}}><a href="/phrases">Phrases{{#if phrases}} <span class="sr-only">(current)</span>{{/if}}</a></li>
+  				<li {{#if websources}}class="active"{{/if}}><a href="/websources">Web Sources{{#if websources}} <span class="sr-only">(current)</span>{{/if}}</a></li>
+  				<li {{#if shellcmds}} class="active"{{/if}}><a href="/shellcmds">Shell Commands{{#if shellcmds}} <span class="sr-only">(current)</span>{{/if}}</a></li>
   			</ul>
 		</nav>
+
 		 
 		{{{body}}}
+
+		<br/><br/>					<!-- Split button -->
+		<div class="btn-group">
+			<button type="button" class="btn btn-danger">Interrupt</button>
+		  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    <span class="caret"></span>
+		    <span class="sr-only">Toggle Dropdown</span>
+		  </button>
+		  <ul class="dropdown-menu">
+		    <li><a href="#">Action</a></li>
+		    <li><a href="#">Another action</a></li>
+		    <li><a href="#">Something else here</a></li>
+		    <li role="separator" class="divider"></li>
+		    <li><a href="#">Separated link</a></li>
+		  </ul>
+		</div>
         
 	</body>
 </html>
